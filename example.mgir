@@ -1,0 +1,17 @@
+# This is a comment
+
+PROBLEM { 								# Brace means that the node will have subnodes
+	TERM {									# A term has maximum of term {variable, coefficient, power}
+		VARIABLE : y					# Variables cannot have subnodes
+	}
+	OPERATION : OP_EQUALS 	# Operations cannot have subnodes
+	TERM {
+		VARIABLE : x
+		COEFFICIENT : 3
+		POWER : 2
+	}
+	OPERATION : OP_ADD
+	TERM {
+		COEFFICIENT : 8
+	}
+}
